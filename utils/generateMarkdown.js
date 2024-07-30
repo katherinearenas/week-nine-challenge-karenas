@@ -4,9 +4,8 @@ function renderLicenseBadge(license) {
   if (!license) {
     return ""
   } else {
-    return `## License
-
-    This project is licensed under the ${license} license.
+    return `
+    ![License Badge]https://img.shields.io/badge/License-${license}-blue
     `;
     }
   }
@@ -27,7 +26,9 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None'){
-    return '<strong>##License</strong>'
+    return `##License 
+    <hr>
+    This project is licensed under the ${license} license.`
   } else {
     return '';
   }
@@ -37,27 +38,38 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   console.log(data.title)
     return `
-      * [Installation](#installation)
-   * [Usage](#usage)
-   * [Tests](#tests)
-   * [Description](#description)
-   ${renderLicenseLink(data.license)}
-  
     #${data.title}
+    <hr>
+    ##Table of Contents
+    <hr>
+   * [Description](#description)
+   * [Installation](#installation)
+   * [Usage](#usage)
+   * [Contributions](#contribution)
+   * [Tests](#tests)
+   * [Questions](#questions)
+   ${renderLicenseLink(data.license)}
+   
+  
+    
 
-    <strong>##Description</strong>
+    ##Description
     ${data.description}
 
-    <strong>##Installation</strong>
+    ##Installation
     ${data.install}
 
-     <strong>##Contributing</strong>
+     ##Contributions
     ${data.contribution}
 
-     <strong>##Tests</strong>
+     ##Tests
     ${data.testing}
+     ##Questions
+     If you have questions you can contact me at:<br>
+    ${data.questions}
 
     ${renderLicenseSection(data.license)}
+    ${renderLicenseBadge(data.license)}
     `;
 }
 

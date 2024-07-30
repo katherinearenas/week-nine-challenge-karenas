@@ -41,6 +41,12 @@ const questions = [
             choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
 
           },
+          {
+            type: 'input',
+            name: 'questions',
+            message: "Enter your email address so users can contact you with questions.",
+          },
+
     ]//)
     // .then((responses) => {
     //     console.log(responses)
