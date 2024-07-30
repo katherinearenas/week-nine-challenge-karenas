@@ -45,7 +45,7 @@ const questions = [
             message: "Enter your email address so users can contact you with questions.",
           },
     ]
-console.log(questions)
+
 
 
 // TODO: Create a function to write README file
