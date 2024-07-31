@@ -1,7 +1,8 @@
 
-    #Week-Nine-Challenge README.md Generator
-    <hr>
+    # README Generator
+    This is a generator that takes in responses from the user generated when the user responds to prompts generated through inquirer.
     ##Table of Contents
+    
     <hr>
    * [Description](#description)
    * [Installation](#installation)
@@ -12,19 +13,15 @@
    * [License](#license)
    
   
-    
-
-    ##Description
-    This project is designed to allow a user to generate a README file. The program takes responses from a set of questions using Inquirer version 8.2.4. and uses fs to create/overwrite a readme file based on the user’s answers.
-
     ##Installation
-    To install, the user must have node.js on their system. Once they do they can create their readme file using the contents of this repository. They must run "npm i"  in order to install the required packages to their system
+    First we make sure our system has node.js installed. Then we run`npm i`
 
      ##Contributions
-    Fellow developers can contribute to this project by forking the repository and adding new prompts for users.
+    By forking the gitHub repo fellow developers have the option to add their own prompts and generate their own README files.
 
      ##Tests
-    The product can be tested by generating a readme file of your own!
+    Try it!  As we  enter responses we are  adding the content for our README to our generate markdown function which generates the content for the test README.
+    
      ##Questions
      If you have questions you can contact me at:<br>
     katherineelainearenas@gmail.com
