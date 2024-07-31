@@ -38,8 +38,8 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   console.log(data.title)
     return `
-    #${data.title}
-    <hr>
+    # ${data.title}
+    ${data.description}
     ##Table of Contents
     <hr>
    * [Description](#description)
@@ -51,11 +51,6 @@ function generateMarkdown(data) {
    ${renderLicenseLink(data.license)}
    
   
-    
-
-    ##Description
-    ${data.description}
-
     ##Installation
     ${data.install}
 
@@ -64,6 +59,7 @@ function generateMarkdown(data) {
 
      ##Tests
     ${data.testing}
+    
      ##Questions
      If you have questions you can contact me at:<br>
     ${data.questions}
