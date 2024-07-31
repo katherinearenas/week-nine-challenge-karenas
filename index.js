@@ -7,8 +7,6 @@ console.log("hey there");
 
 // TODO: Create an array of questions for user input
 const questions = [
-// inquirer
-//     .prompt([
         {
             type: 'input',
             name: 'title',
@@ -46,13 +44,8 @@ const questions = [
             name: 'questions',
             message: "Enter your email address so users can contact you with questions.",
           },
+    ]
 
-    ]//)
-    // .then((responses) => {
-    //     console.log(responses)
-    //     fs.writeFile('responses.txt', responses)
-    // });
-console.log(questions)
 
 
 // TODO: Create a function to write README file
@@ -73,13 +66,6 @@ function init() {
         console.log(responses);
             const readmeContent = generateMarkdown(responses);
             writeToFile(readmeContent);
-            // fs.writeFile('README.md',readmeContent, (err) => { 
-            //     if (err){
-            //         console.log(err);
-            //     } else {
-            //         console.log('README.md is ready');
-            //     }
-            // })
         });
 }
 
